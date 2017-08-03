@@ -1,0 +1,5 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Tema.Master" AutoEventWireup="true" CodeBehind="Left-Sidebar.master.cs" Inherits="ETicaretProjesi.Left_Sidebar" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentBody" runat="server">
+
+</asp:Content>
