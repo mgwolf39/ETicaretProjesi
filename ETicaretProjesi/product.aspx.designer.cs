@@ -10,33 +10,33 @@
 namespace ETicaretProjesi {
     
     
-    public partial class Left_Sidebar {
+    public partial class product {
         
         /// <summary>
-        /// rptsRecentProducts control.
+        /// rptProductImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptsRecentProducts;
+        protected global::System.Web.UI.WebControls.Repeater rptProductImage;
         
         /// <summary>
-        /// rptSidebarPopularProducts control.
+        /// rptProductTicks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSidebarPopularProducts;
+        protected global::System.Web.UI.WebControls.Repeater rptProductTicks;
         
         /// <summary>
-        /// ProductContent control.
+        /// rptProductReviews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ProductContent;
+        protected global::System.Web.UI.WebControls.Repeater rptProductReviews;
     }
 }

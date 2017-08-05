@@ -17,7 +17,7 @@ namespace ETicaretProjesi
             rptHomePagePromo.DataSource = Functions.GetHomePagePromoData();
             rptHomePagePromo.DataBind();
 
-            rptHomePagePopularProducts.DataSource = Functions.GetHomePagePopularProductsData();
+            rptHomePagePopularProducts.DataSource = Functions.GetPoplarProductsData(6);
             rptHomePagePopularProducts.DataBind(); 
         }
     }

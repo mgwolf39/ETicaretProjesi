@@ -46,7 +46,7 @@
     <link rel="alternate stylesheet" type="text/css" href="css/schemes/de-york.css" title="de-york" media="all" />
     <link rel="alternate stylesheet" type="text/css" href="css/schemes/blaze-orange.css" title="blaze-orange" media="all" />
     <link rel="alternate stylesheet" type="text/css" href="css/schemes/hot-pink.css" title="hot-pink" media="all" />
-   
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -106,7 +106,7 @@
                     <asp:Repeater ID="rptCategories" runat="server">
                         <ItemTemplate>
                             <li>
-                                <a href="category?id=<%# Eval("ID")%>" style="text-align: center"><i class="fa fa-<%# Eval("Icon") %>"></i><%# Eval("Name") %></a>
+                                <a href="category.aspx?id=<%# Eval("ID")%>" style="text-align: center"><i class="fa fa-<%# Eval("Icon") %>"></i><%# Eval("Name") %></a>
                             </li>
                         </ItemTemplate>
                     </asp:Repeater>
@@ -228,20 +228,18 @@
         </form>
         <!-- END SEARCH AREA -->
 
-      
-
-
-
-        
+        <div class="gap"></div>
 
 
         <!-- //////////////////////////////////
     //////////////END MAIN HEADER////////// 
     ////////////////////////////////////-->
 
-        <div>
-            <asp:ContentPlaceHolder ID="ContentBody" runat="server">
-            </asp:ContentPlaceHolder>
+        <div class="container">
+            <div class="row">
+                <asp:ContentPlaceHolder ID="ProductID" ClientIDMode="AutoID" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
         </div>
         <!-- //////////////////////////////////
     //////////////MAIN FOOTER////////////// 

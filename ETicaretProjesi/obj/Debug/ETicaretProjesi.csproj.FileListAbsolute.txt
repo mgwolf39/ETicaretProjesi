@@ -31,3 +31,36 @@ c:\users\hasan\documents\visual studio 2015\Projects\ETicaretProjesi\ETicaretPro
 c:\users\hasan\documents\visual studio 2015\Projects\ETicaretProjesi\ETicaretProjesi\obj\Debug\ETicaretProjesi.csprojResolveAssemblyReference.cache
 c:\users\hasan\documents\visual studio 2015\Projects\ETicaretProjesi\ETicaretProjesi\obj\Debug\ETicaretProjesi.dll
 c:\users\hasan\documents\visual studio 2015\Projects\ETicaretProjesi\ETicaretProjesi\obj\Debug\ETicaretProjesi.pdb
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\obj\Debug\ETicaretProjesi.csprojResolveAssemblyReference.cache
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\obj\Debug\ETicaretProjesi.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\obj\Debug\ETicaretProjesi.pdb
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\ApplicationInsights.config
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\csc.exe
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\vbc.exe
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\ETicaretProjesi.dll.config
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\ETicaretProjesi.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\ETicaretProjesi.pdb
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.Web.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.Web.xml
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Hasan\Documents\GitHub\ETicaretProjesi\ETicaretProjesi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml

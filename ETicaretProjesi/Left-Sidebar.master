@@ -1,5 +1,71 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Tema.Master" AutoEventWireup="true" CodeBehind="Left-Sidebar.master.cs" Inherits="ETicaretProjesi.Left_Sidebar" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentBody" runat="server">
-
+<asp:Content ID="ProductPageLeftSideList" ContentPlaceHolderID="ProductID" runat="server">
+    <div class="col-md-3">
+        <aside class="sidebar-left">
+            <div class="sidebar-box">
+                <h5>Son Ürünler</h5>
+                <ul class="thumb-list">
+                    <asp:Repeater ID="rptsRecentProducts" runat="server">
+                        <ItemTemplate>
+                            <li>
+                                <a href="product.aspx?id=<%#Eval("id")%>">
+                                    <img src="<%#Eval("ProductImage") %>" alt="Image Alternative text" title="<%#Eval("Title") %>" />
+                                </a>
+                                <div class="thumb-list-item-caption">
+                                    <h5 class="thumb-list-item-title"><a href="product.aspx?id=<%#Eval("id") %>"><%#Eval("Title") %></a></h5>
+                                    <p class="thumb-list-item-price"><%#Eval("price")%></p>
+                                </div>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h5>Popüler</h5>
+                <ul class="thumb-list">
+                    <asp:Repeater ID="rptSidebarPopularProducts" runat="server">
+                        <ItemTemplate>
+                            <li>
+                                <a href="popular-products.aspx?id=<%# Eval("id") %>">
+                                    <img src="img/food_is_pride_70x70.jpg" alt="Image Alternative text" title="<%# Eval("title") %>" />
+                                </a>
+                                <div class="thumb-list-item-caption">
+                                    <h5 class="thumb-list-item-title"><a href="#"><%# Eval("title") %></a></h5>
+                                    <p class="thumb-list-item-price"><%# Eval("price") %></p>
+                                </div>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h5>Son Yorumlar</h5>
+                <ul class="thumb-list">
+                    <%for (int i = 0; i < tableRecentReviews.Rows.Count; i++)
+                        { %>
+                    <li>
+                        <img src="<%=tableRecentReviews.Rows[i]["Image"]%>" alt="<%=tableRecentReviews.Rows[i]["Title"]%>" title="<%=tableRecentReviews.Rows[i]["Title"]%>" />
+                        <div class="thumb-list-item-caption">
+                            <ul class="icon-group icon-list-rating" title="<%= tableRecentReviews.Rows[i]["Rating"] %>/5 rating">
+                                <%for (int k = 0; k < int.Parse(tableRecentReviews.Rows[i]["Rating"].ToString()); k++)
+                                    { %>
+                                <li class="selected"><i class="fa fa-star"></i></li>
+                                <% } %>
+                                <%for (int l = 0; l < (5 - int.Parse(tableRecentReviews.Rows[i]["Rating"].ToString())); l++)
+                                    {%>
+                                <li><i class="fa fa-star-o"></i></li>
+                                <% } %>
+                            </ul>
+                            <h5 class="thumb-list-item-title"><a href="products.aspx?id=<%= tableRecentReviews.Rows[i]["ID"] %>"><%= tableRecentReviews.Rows[i]["Title"] %></a></h5>
+                            <p class="thumb-list-item-author">Muhsin</p>
+                        </div>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <asp:ContentPlaceHolder ID="ProductContent" ClientIDMode="AutoID" runat="server">
+    </asp:ContentPlaceHolder>
 </asp:Content>

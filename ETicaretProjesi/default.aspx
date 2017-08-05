@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Tema.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="ETicaretProjesi._default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ProductID" runat="server">
 
     <div class="demo_changer" id="demo_changer">
         <div class="demo-icon fa fa-sliders"></div>
@@ -54,15 +54,6 @@
             <div class="line"></div>
         </div>
     </div>
-
-</asp:Content>
-
-
-
-
-
-
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
     <!-- TOP AREA -->
