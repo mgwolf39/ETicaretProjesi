@@ -3,6 +3,10 @@
 <asp:Content ID="ProductPageLeftSideList" ContentPlaceHolderID="ProductID" runat="server">
     <div class="col-md-3">
         <aside class="sidebar-left">
+    <asp:ContentPlaceHolder ID="CategoryContent" ClientIDMode="AutoID" runat="server">
+
+    </asp:ContentPlaceHolder>
+    
             <div class="sidebar-box">
                 <h5>Son Ürünler</h5>
                 <ul class="thumb-list">
@@ -10,10 +14,10 @@
                         <ItemTemplate>
                             <li>
                                 <a href="product.aspx?id=<%#Eval("id")%>">
-                                    <img src="<%#Eval("ProductImage") %>" alt="Image Alternative text" title="<%#Eval("Title") %>" />
+                                    <img src="<%#Eval("Image") %>" alt="Image Alternative text" title="<%#Eval("Title") %>" />
                                 </a>
                                 <div class="thumb-list-item-caption">
-                                    <h5 class="thumb-list-item-title"><a href="product.aspx?id=<%#Eval("id") %>"><%#Eval("Title") %></a></h5>
+                                    <h5 class="thumb-list-item-title"><a href="product.aspx?id=<%#Eval("ID") %>"><%#Eval("Title") %></a></h5>
                                     <p class="thumb-list-item-price"><%#Eval("price")%></p>
                                 </div>
                             </li>
@@ -27,11 +31,11 @@
                     <asp:Repeater ID="rptSidebarPopularProducts" runat="server">
                         <ItemTemplate>
                             <li>
-                                <a href="popular-products.aspx?id=<%# Eval("id") %>">
+                                <a>
                                     <img src="img/food_is_pride_70x70.jpg" alt="Image Alternative text" title="<%# Eval("title") %>" />
                                 </a>
                                 <div class="thumb-list-item-caption">
-                                    <h5 class="thumb-list-item-title"><a href="#"><%# Eval("title") %></a></h5>
+                                    <h5 class="thumb-list-item-title"><a href="product.aspx?id=<%# Eval("id") %>"><%# Eval("title") %></a></h5>
                                     <p class="thumb-list-item-price"><%# Eval("price") %></p>
                                 </div>
                             </li>
@@ -57,7 +61,7 @@
                                 <li><i class="fa fa-star-o"></i></li>
                                 <% } %>
                             </ul>
-                            <h5 class="thumb-list-item-title"><a href="products.aspx?id=<%= tableRecentReviews.Rows[i]["ID"] %>"><%= tableRecentReviews.Rows[i]["Title"] %></a></h5>
+                            <h5 class="thumb-list-item-title"><a href="product.aspx?id=<%= tableRecentReviews.Rows[i]["ID"] %>"><%= tableRecentReviews.Rows[i]["Title"] %></a></h5>
                             <p class="thumb-list-item-author">Muhsin</p>
                         </div>
                     </li>

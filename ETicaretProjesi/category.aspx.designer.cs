@@ -10,24 +10,15 @@
 namespace ETicaretProjesi {
     
     
-    public partial class _default {
+    public partial class Category {
         
         /// <summary>
-        /// rptHomePageSlider control.
+        /// rptCategoryList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptHomePageSlider;
-        
-        /// <summary>
-        /// rptHomePagePromo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptHomePagePromo;
+        protected global::System.Web.UI.WebControls.Repeater rptCategoryList;
     }
 }

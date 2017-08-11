@@ -13,6 +13,8 @@ namespace ETicaretProjesi
     {
         protected ProductModel ProductModel = new ProductModel();
         protected DataTable tableRelatedProducts = new DataTable();
+        protected DataTable tableIPAddress = new DataTable();
+        protected string curIPAddress;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(Request.QueryString.Get("id")))
@@ -34,15 +36,28 @@ namespace ETicaretProjesi
 
                 rptProductReviews.DataSource = Functions.GetProductReviews(int.Parse(Request.QueryString.Get("id").ToString()));
                 rptProductReviews.DataBind();
-
-                tableRelatedProducts = Functions.GetRelatedProductData(int.Parse(Request.QueryString.Get("id").ToString()),int.Parse(ProductModel.CategoryID));
-
+                
+                Functions.InsertCounter(Request.QueryString.Get("id"),GetIPAddress());
+                
             }
             else
             {
                 Response.Redirect("default.aspx");
             }
 
+        }
+         protected string GetIPAddress()
+        {
+            string VisitorsIPAddr = string.Empty;
+            if (HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"] != null)
+            {
+                VisitorsIPAddr = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString();
+            }
+            else if (HttpContext.Current.Request.UserHostAddress.Length != 0)
+            {
+                VisitorsIPAddr = HttpContext.Current.Request.UserHostAddress;
+            }
+            return VisitorsIPAddr;
         }
     }
 }

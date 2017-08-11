@@ -48,7 +48,7 @@
             <div class="col-md-5">
                 <div class="product-info box">
                     <ul class="icon-group icon-list-rating text-color" title="<%= ProductModel.Rating %>/5 rating">
-                        <%for (int k = 0; k < int.Parse(ProductModel.Rating.ToString()); k++)
+                        <%for (int k = 0; k < int.Parse(ProductModel.Rating); k++)
                             { %>
                         <li class="selected"><i class="fa fa-star"></i></li>
                         <% }
@@ -136,44 +136,28 @@
         <div class="gap"></div>
         <h3>İlgili Ürünler</h3>
         <div class="gap gap-mini"></div>
-        <div class="row row-wrap">
-            <% for (int i = 0; i < tableRelatedProducts.Rows.Count; i++)
-                { %>
-            <div class="col-md-4">
-                <div class="product-thumb">
-                    <header class="product-header">
-                        <img src="<%= tableRelatedProducts.Rows[i]["Image"] %>" alt="Image Alternative text" title="<%= tableRelatedProducts.Rows[i]["Title"] %>" />
-                    </header>
-                    <div class="product-inner">
-                        <ul class="icon-group icon-list-rating" title="<%= tableRelatedProducts.Rows[i]["Rating"]%> /5 rating" />
-                        <% for (int k = 0; k < int.Parse(tableRelatedProducts.Rows[i]["Rating"].ToString()); k++)
-                            { %>
-                        <li class="selected"><i class="fa fa-star"></i></li>
-                        <% } %>
-                        <%for (int l = 0; l < (5 - int.Parse(tableRelatedProducts.Rows[i]["Rating"].ToString())); l++)
-                            {%>
-                        <li><i class="fa fa-star-o"></i></li>
-                        <% } %>
-                                        </ul>
-                                        <h5 class="product-title"><%= tableRelatedProducts.Rows[i]["Title"]%></h5>
-                        <p class="product-desciption"><%= tableRelatedProducts.Rows[i]["SubTitle"] %></p>
-                        <div class="product-meta">
-                            <ul class="product-price-list">
-                                <li><span class="product-price"><%= tableRelatedProducts.Rows[i]["Price"]%></span>
-                                </li>
-                            </ul>
-                            <ul class="product-actions-list">
-                                <li><a class="btn btn-sm" href="#"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
-                                </li>
-                                <li><a class="btn btn-sm" href="product.aspx?id=<%= tableRelatedProducts.Rows[i]["ID"]%>"><i class="fa fa-bars"></i>Detaylar</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <% } %>
         </div>
+<div class="owl-carousel" id="owl-carousel" data-items="3">
+ <% for (int i = 0; i < tableRelatedProducts.Rows.Count; i++)
+                { %>
+                            <div>
+                                <div class="product-thumb">
+                                    <header class="product-header">
+                                        <img src="<%= tableRelatedProducts.Rows[i]["Image"] %>" alt="Image Alternative text" title="<%= tableRelatedProducts.Rows[i]["Title"] %>" />
+                                    </header>
+                                    <div class="product-inner">
+                                        <h5 class="product-title"><%= tableRelatedProducts.Rows[i]["Title"] %></h5>
+                                        <p class="product-desciption"><%= tableRelatedProducts.Rows[i]["SubTitle"] %></p>
+                                        <ul class="product-actions-list">
+                                            <li><a class="btn btn-sm" href="#"><i class="fa fa-shopping-cart"></i> To Cart</a>
+                                            </li>
+                                            <li><a class="btn btn-sm" href="product.aspx?id=<%= tableRelatedProducts.Rows[i]["ID"] %>"><i class="fa fa-bars"></i> Details</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+            <% } %>
         <div class="gap gap-small"></div>
     </div>
 </asp:Content>

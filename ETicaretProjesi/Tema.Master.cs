@@ -13,7 +13,7 @@ namespace ETicaretProjesi
         {
            
 
-            rptCategories.DataSource = Functions.GetCategoriesData();
+            rptCategories.DataSource = Functions.GetCategoryListData();
             rptCategories.DataBind();
 
             

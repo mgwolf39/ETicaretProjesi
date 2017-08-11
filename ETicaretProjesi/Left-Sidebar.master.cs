@@ -14,11 +14,11 @@ namespace ETicaretProjesi
         protected DataTable tableRecentReviews;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            rptSidebarRecentProducts.DataSource = Functions.GetRecentProductsData(4);
-            rptSidebarRecentProducts.DataBind();
 
-            rptSidebarPopularProducts.DataSource = Functions.GetPopularProducts(4);
+            rptsRecentProducts.DataSource = Functions.GetRecentProductsData(4);
+            rptsRecentProducts.DataBind();
+
+            rptSidebarPopularProducts.DataSource = Functions.GetSidebarPopularProducts(4);
             rptSidebarPopularProducts.DataBind();
 
             tableRecentReviews = Functions.GetRecentReviewsData(4);
